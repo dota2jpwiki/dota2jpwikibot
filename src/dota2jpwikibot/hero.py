@@ -1,5 +1,6 @@
 from typing import Dict
 import gamefile
+import localization
 
 _ignores = [
     "Version",
@@ -25,7 +26,7 @@ for id in gamefile.npc_heroes:
         continue
     base = gamefile.npc_heroes["npc_dota_hero_base"].copy()
     base.update(gamefile.npc_heroes[id])
-    _heroes[id] = Hero(base, "Missing")
+    _heroes[id] = Hero(base, localization.dota[id+":n"])
 
 
 def get_hero(hero_name):

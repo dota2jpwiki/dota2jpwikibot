@@ -8,6 +8,8 @@ authors = [
 dependencies = [
     "vpk>=1.4.0",
     "vdf>=3.4",
+    "requests>=2.31.0",
+    "jinja2>=3.1.2",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
